@@ -85,60 +85,123 @@
 </head>
 <body>
     <div class="container">
-        <div class="profile-pic-wrapper">
-            <img src="assets\shfarhaan.png" alt="Sazzad Hussain Farhaan" class="profile-pic">
-        </div>
-        <h1>Sazzad Hussain Farhaan</h1>
-
-        <strong>About Me</strong>
-        <p>
-            I am a AI Enthusiast exploring the world of AI professionally and 
-            academically for the last 5 years, particularly focusing on Ethical AI 
-            and Natural Language Processing (NLP). My work revolves around integrating
-            advanced AI techniques to address real-world challenges, with a keen interest
-            in exploring the intersection of NLP and Computer Vision.
-        </p>
-        <strong>Current Role</strong>
-        <p>
-            In my current role, as a Business Analyst, in <a href="https://1cs.holdings/"><strong> 1CS Holdings Limited </strong></a>
-            I lead initiatives in Project Management, Strategic Planning, 
-            and Stakeholder Management, driving data-driven decision-making processes. 
-            My responsibilities also include Financial Analysis and SWOT Analysis, 
-            where I apply analytical rigor to optimize organizational strategies.
-        </p>
-        <strong>AI Development Experience</strong>   
-        <p>
-            Alongside my role as a Business Analyst, I have extensive 
-            experience as an AI Developer, specializing in Image Processing, 
-            OCR, and Compression Algorithms. This dual expertise allows me to 
-            approach problems from both strategic and technical perspectives.
-        </p>
-        <strong>Research Interests</strong>   
-        <p>
-            My research primarily focuses on Ethical AI, with a strong emphasis 
-            on NLP and its applications in analyzing and mitigating biases within data. 
-            Additionally, I have explored Computer Vision techniques for healthcare 
-            applications, such as early detection of neurodegenerative diseases. 
-            I am deeply committed to advancing my understanding of these fields, 
-            with a particular interest in Multimodal Machine Learning.
-        </p>
-        <strong>Looking Ahead</strong>
-        <p>
-            I am actively seeking PhD opportunities that align with my research interests 
-            in Ethical AI and NLP. I am eager to contribute to and expand my expertise in 
-            these areas, especially in the context of real-world applications that promote 
-            social good.
-        </p>
-
-            <div class="icons">
-                <a href="assets\Sazzad Hussain Farhaan - CV.pdf" target="_blank" title="CV"><i class="fas fa-file-alt"></i></a>
-                <a href="https://www.linkedin.com/in/shfarhaan/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/shfarhaan" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://scholar.google.com/citations?user=YYQ5wpAAAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <div class="grid-wrapper">
+            <!-- Column 1: Image and Icons -->
+            <div class="left-column">
+                <div class="profile-pic-wrapper">
+                    <img src="assets\shfarhaan.png" alt="Sazzad Hussain Farhaan" class="profile-pic">
+                </div>
+                <div class="icons">
+                    <a href="assets\Sazzad Hussain Farhaan - CV.pdf" target="_blank" title="CV"><i class="fas fa-file-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/shfarhaan/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shfarhaan" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://scholar.google.com/citations?user=YYQ5wpAAAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                </div>
             </div>
-            
-        </div>
 
+            <!-- Column 2: About Me, Current Role, AI Development Experience -->
+            <div class="middle-column">
+                <h1>Sazzad Hussain Farhaan</h1>
+
+                <strong>About Me</strong>
+                <p>
+                    I am a AI Enthusiast exploring the world of AI professionally and 
+                    academically for the last 5 years, particularly focusing on Ethical AI 
+                    and Natural Language Processing (NLP). My work revolves around integrating
+                    advanced AI techniques to address real-world challenges, with a keen interest
+                    in exploring the intersection of NLP and Computer Vision.
+                </p>
+
+                <strong>Current Role</strong>
+                <p>
+                    In my current role, as a Business Analyst, in <a href="https://1cs.holdings/"><strong> 1CS Holdings Limited </strong></a>
+                    I lead initiatives in Project Management, Strategic Planning, 
+                    and Stakeholder Management, driving data-driven decision-making processes. 
+                    My responsibilities also include Financial Analysis and SWOT Analysis, 
+                    where I apply analytical rigor to optimize organizational strategies.
+                </p>
+
+                <strong>AI Development Experience</strong>   
+                <p>
+                    Alongside my role as a Business Analyst, I have extensive 
+                    experience as an AI Developer, specializing in Image Processing, 
+                    OCR, and Compression Algorithms. This dual expertise allows me to 
+                    approach problems from both strategic and technical perspectives.
+                </p>
+            </div>
+
+            <!-- Column 3: Research Interests, Looking Ahead -->
+            <div class="right-column">
+                <strong>Research Interests</strong>   
+                <p>
+                    My research primarily focuses on Ethical AI, with a strong emphasis 
+                    on NLP and its applications in analyzing and mitigating biases within data. 
+                    Additionally, I have explored Computer Vision techniques for healthcare 
+                    applications, such as early detection of neurodegenerative diseases. 
+                    I am deeply committed to advancing my understanding of these fields, 
+                    with a particular interest in Multimodal Machine Learning.
+                </p>
+
+                <strong>Looking Ahead</strong>
+                <p>
+                    I am actively seeking PhD opportunities that align with my research interests 
+                    in Ethical AI and NLP. I am eager to contribute to and expand my expertise in 
+                    these areas, especially in the context of real-world applications that promote 
+                    social good.
+                </p>
+            </div>
+        </div>
     </div>
+
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            gap: 20px;
+        }
+
+        .profile-pic-wrapper {
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        .icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #000;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        strong {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
 </body>
 </html>
