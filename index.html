@@ -202,6 +202,58 @@
             margin-bottom: 10px;
             display: block;
         }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .grid-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .left-column, .middle-column, .right-column {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .icons a {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-pic {
+                max-width: 100px;
+            }
+
+            h1 {
+                font-size: 1.4em;
+            }
+
+            .icons a {
+                font-size: 18px;
+            }
+
+            strong {
+                font-size: 1.1em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+        }
     </style>
+
 </body>
 </html>
