@@ -15,7 +15,7 @@
         <div class="container">
             <img src="assets/shfarhaan.png" alt="Sazzad Hussain Farhaan" class="profile-pic">
             <h1>Sazzad Hussain Farhaan</h1>
-            <p class="subtitle">AI Researcher & Machine Learning Engineer</p>
+            <p class="subtitle" id="profile-subtitle">AI Researcher & Machine Learning Engineer</p>
             
         <div class="social-links">
             <a href="assets/Sazzad Hussain Farhaan - CV 26.09.2025.pdf" target="_blank" title="CV"><i class="fas fa-file-alt"></i></a>
@@ -29,8 +29,25 @@
         </div>
     </header>
 
+    <!-- Profile Toggle Section -->
+    <section style="background: #1a1a2e; padding: 30px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px);">
+        <div class="container" style="text-align: center;">
+            <p style="margin-bottom: 15px; font-size: 0.9rem; opacity: 0.8;">View My Profile As:</p>
+            <div class="profile-toggle-container">
+                <button class="profile-toggle-btn active" data-profile="ai" id="ai-profile-btn">
+                    <i class="fas fa-brain"></i>
+                    <span>AI/ML Engineer</span>
+                </button>
+                <button class="profile-toggle-btn" data-profile="marketing" id="marketing-profile-btn">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Digital Marketing Expert</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
-    <section class="section" id="about">
+    <section class="section ai-profile" id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <p class="section-subtitle">Passionate about advancing Explainable AI and Multimodal Machine Learning for real-world impact</p>
@@ -67,7 +84,7 @@
     </section>
 
     <!-- Research Interests -->
-    <section class="section">
+    <section class="section ai-profile">
     <div class="container">
         <h2 class="section-title">Research Interests</h2>
         <p class="section-subtitle">Exploring advanced, interpretable, and ethically aligned AI systems across disciplines</p>
@@ -116,7 +133,7 @@
 
 
     <!-- Research Publications -->
-    <section class="section" id="research">
+    <section class="section ai-profile" id="research">
     <div class="container">
         <h2 class="section-title">Research Publications</h2>
         <p class="section-subtitle">Contributing to AI, healthcare, and computational intelligence through scholarly publications</p>
@@ -296,7 +313,7 @@
 
 
     <!-- Projects -->
-    <section class="section" id="projects">
+    <section class="section ai-profile" id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-subtitle">Innovative AI solutions addressing real-world challenges</p>
@@ -368,7 +385,7 @@
     </section>
 
     <!-- Experience -->
-    <section class="section">
+    <section class="section ai-profile">
     <div class="container">
         <h2 class="section-title">Professional Experience</h2>
         <p class="section-subtitle">Building expertise across AI, Data Science, and Education</p>
@@ -458,7 +475,7 @@
     </section>
 
     <!-- Internships & Fellowships -->
-    <section class="section">
+    <section class="section ai-profile">
     <div class="container">
         <h2 class="section-title">Internships & Fellowships</h2>
         <p class="section-subtitle">Hands-on contributions to global AI and data-driven initiatives</p>
@@ -517,7 +534,7 @@
 
 
     <!-- Technical Skills -->
-    <section class="section">
+    <section class="section ai-profile">
         <div class="container">
             <h2 class="section-title">Technical Competencies</h2>
             <p class="section-subtitle">Comprehensive expertise across AI/ML technologies and development tools</p>
@@ -563,7 +580,7 @@
     </section>
     
     <!-- Awards -->
-    <section class="section">
+    <section class="section ai-profile">
     <div class="container">
         <h2 class="section-title">Awards & Recognition</h2>
         <p class="section-subtitle">Honoured for academic excellence, leadership, and innovation in AI and technology</p>
@@ -645,7 +662,7 @@
 
     
     <!-- Leadership & Co-Curricular Experience -->
-    <section class="section">
+    <section class="section ai-profile">
     <div class="container">
         <h2 class="section-title">Co-Curricular & Leadership Experience</h2>
         <p class="section-subtitle">Fostering innovation, collaboration, and leadership across academic and professional communities</p>
@@ -738,7 +755,7 @@
 
 
     <!-- Education -->
-    <section class="section">
+    <section class="section ai-profile">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <p class="section-subtitle">Academic foundation in computer science and engineering</p>
@@ -761,7 +778,7 @@
     </section>
 
     <!-- Digital Marketing Expert Section -->
-    <section class="section" id="digital-marketing">
+    <section class="section marketing-profile" id="digital-marketing" style="display: none;">
         <div class="container">
             <h2 class="section-title">Digital Media Strategy & Marketing</h2>
             <p class="section-subtitle">8+ Years of Data-Driven Advertising Expertise & 90+ Successful Client Campaigns</p>
@@ -1752,6 +1769,64 @@
             scroll-behavior: smooth;
         }
 
+        /* Profile Toggle Styles */
+        .profile-toggle-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .profile-toggle-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .profile-toggle-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .profile-toggle-btn.active {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-color: #667eea;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .profile-toggle-btn i {
+            font-size: 1.2rem;
+        }
+
+        /* Profile sections visibility */
+        .ai-profile {
+            display: block;
+        }
+
+        .marketing-profile {
+            display: none;
+        }
+
+        .profile-active-marketing .ai-profile {
+            display: none;
+        }
+
+        .profile-active-marketing .marketing-profile {
+            display: block;
+        }
+
         /* Loading animation */
         @keyframes fadeInUp {
             from {
@@ -1890,6 +1965,48 @@
             card.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0) scale(1)';
             });
+        });
+
+        // Profile Toggle Functionality
+        const aiBtn = document.getElementById('ai-profile-btn');
+        const marketingBtn = document.getElementById('marketing-profile-btn');
+        const subtitle = document.getElementById('profile-subtitle');
+
+        function switchProfile(profile) {
+            if (profile === 'ai') {
+                // Switch to AI profile
+                document.body.classList.remove('profile-active-marketing');
+                aiBtn.classList.add('active');
+                marketingBtn.classList.remove('active');
+                subtitle.textContent = 'AI Researcher & Machine Learning Engineer';
+                
+                // Scroll to top smoothly
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (profile === 'marketing') {
+                // Switch to Marketing profile
+                document.body.classList.add('profile-active-marketing');
+                marketingBtn.classList.add('active');
+                aiBtn.classList.remove('active');
+                subtitle.textContent = 'Digital Media Strategist & ML Engineer';
+                
+                // Scroll to top smoothly
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Store preference in localStorage
+            localStorage.setItem('profilePreference', profile);
+        }
+
+        // Event listeners for profile toggle
+        aiBtn.addEventListener('click', () => switchProfile('ai'));
+        marketingBtn.addEventListener('click', () => switchProfile('marketing'));
+
+        // Load saved preference on page load
+        window.addEventListener('load', () => {
+            const savedProfile = localStorage.getItem('profilePreference');
+            if (savedProfile === 'marketing') {
+                switchProfile('marketing');
+            }
         });
     </script>
 </body>
